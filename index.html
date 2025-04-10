@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic Video Player</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="./dist/basic-video-player.css">
+
+    <style>
+        body {
+            background-color:#e6e6e6;
+            margin:0;
+        }
+
+        .container {
+            max-width:1280px;
+            margin:0 auto;
+        }
+
+        .video-column {
+            padding:10px;
+            flex:0 0 100%;
+            box-sizing:border-box;
+        }
+        .wrap {
+            flex-wrap:wrap;
+        }
+
+        @media screen and (min-width:768px){
+            .video-column {
+                flex:0 0 50%;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/fontawesome.css" integrity="sha384-jLuaxTTBR42U2qJ/pm4JRouHkEDHkVqH0T1nyQXn1mZ7Snycpf6Rl25VBNthU4z0" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/solid.css" integrity="sha384-+0VIRx+yz1WBcCTXBkVQYIBVNEFH1eP6Zknm16roZCyeNg2maWEpk/l/KsyFKs7G" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+    <div class="bv__flex-row">
+        <div id="player" class="bv__container"></div>
+    </div>
+</div>
+<script src="./dist/basic-video-player.js"></script>
+</body>
+</html>
